@@ -1,0 +1,35 @@
+<!-- Mendefinisikan tipe dokumen berupa html -->
+<html>
+	<!-- Memberikan judul pada tab browser -->
+	<head>
+		<title></title>
+	</head>
+
+	<!-- Menanamkan script sisi klien (JavaScript) -->
+	<script language="Javascript">
+		// Blok kode untuk melakukan tugas tertentu
+		function test(){
+			// Mengirimkan nilai dari val1 ke T1
+			var val1=document.kirim.T1.value
+
+			// Statement val1 untuk nilai T2
+			if (val1%2==0)
+				// Megirim teks 'bilangan genap' ke T2 jika nilai val1==0
+				document.kirim.T2.value="bilangan genap"
+			else
+				// Megirim teks 'bilangan ganjil' ke T2 jika nilai val1!=0
+				document.kirim.T2.value="bilangan ganjil"
+		}
+	</script>
+	
+	<body>
+		<!-- Membuat form di html -->
+		<form method="POST" name="kirim">
+			<!-- Membuat paragraf dan textbox -->
+			<p>Bil <input type="text" name="T1" size="20"> MERUPAKAN BIL <input type="text" name="T2" size="20"></p>
+
+			<!-- Membuat tombol yang dapat ditekan -->
+			<p><input type="button" value="TEBAK" name="B1" onclick=test()></p>
+		</form>
+	</body>
+</html>

@@ -1,0 +1,66 @@
+<!-- Mendefinisikan tipe dokumen berupa html -->
+<html>
+	<!-- Memberikan judul pada tab browser -->
+	<head>
+		<title>Konversi Angka Menjadi Huruf</title>
+	</head>
+
+	<!-- Menanamkan script sisi klien (JavaScript) -->
+	<script language ="Javascript">
+		// Blok kode untuk melakukan tugas tertentu
+		function konversi(){
+			// Mengirimkan nilai dari variabel nilai ke elemen dengan atribut nama No
+			var nilai = document.kirim.No.value
+			
+			// Syarat variabel nilai untuk diubah menjadi huruf
+			if (nilai<=40)
+				// Megirim teks 'E' ke elemen dengan atribut nama Hu jika nilai <=40
+				document.kirim.Hu.value="E"
+
+			// Syarat variabel nilai untuk diubah menjadi huruf
+			else if (nilai<=55)
+				// Megirim teks 'D' ke elemen dengan atribut nama Hu jika nilai <=55
+				document.kirim.Hu.value="D"
+
+			// Syarat variabel nilai untuk diubah menjadi huruf
+			else if (nilai<=60)
+				// Megirim teks 'C' ke elemen dengan atribut nama Hu jika nilai <=60
+				document.kirim.Hu.value="C"
+
+			// Syarat variabel nilai untuk diubah menjadi huruf
+			else if (nilai<=65)
+				// Megirim teks 'BC' ke elemen dengan atribut nama Hu jika nilai <=65
+				document.kirim.Hu.value="BC"
+
+			// Syarat variabel nilai untuk diubah menjadi huruf
+			else if (nilai<=70)
+				// Megirim teks 'B' ke elemen dengan atribut nama Hu jika nilai <=70
+				document.kirim.Hu.value="B"
+
+			// Syarat variabel nilai untuk diubah menjadi huruf
+			else if (nilai<=80)
+				// Megirim teks 'AB' ke elemen dengan atribut nama Hu jika nilai <=80
+				document.kirim.Hu.value="AB"
+
+			// Syarat variabel nilai untuk diubah menjadi huruf
+			else if (nilai<=100)
+				// Megirim teks 'A' ke elemen dengan atribut nama Hu jika nilai <=100
+				document.kirim.Hu.value="A"
+
+			// Jika nilai yang dimasukkan lebih dari 100
+			else
+				// Megirim teks 'Data tidak valid' ke elemen dengan atribut nama Hu jika nilai >100
+				document.kirim.Hu.value="Data tidak valid"
+		}
+	</script>
+
+	<body>
+		<form method="POST" name="kirim">
+			<!-- Membuat paragraf dan textbox -->
+			<p>Nilai : <input type="text" name="No" size="20"> <br><br> Hasil : <input type="text" name="Hu" size="20"></p>
+
+			<!-- Membuat tombol yang dapat ditekan -->
+			<p><input type="button" value="KONVERSI" name="k1" onclick=konversi()></p>
+		</form>
+	</body>
+</html>

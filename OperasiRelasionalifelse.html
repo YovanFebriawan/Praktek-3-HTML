@@ -1,0 +1,46 @@
+<!-- Mendefinisikan tipe dokumen berupa html -->
+<html>
+<!-- Memberikan judul pada tab browser -->
+	<head>
+		<title>Contoh Program JavaScript</title>
+	</head>
+	
+	<!-- Menanamkan script sisi klien (JavaScript) -->
+	<script lan="javascript">
+		// Blok kode untuk melakukan tugas tertentu
+		function test(){
+			// Menampilkan kotak dialog untuk memasukkan nilai 
+			val1=window.prompt("Nilai I :")
+			val2=window.prompt("Nilai II :")
+
+			// Menampilkan teks 'val1==val2'
+			document.write("<br>"+"val1==val2"+"<br>")
+
+			// Melakukan proses perbandingan (==) dan menampilkan hasil perbandingan
+			document.write(val1==val2)
+
+			// Menampilkan teks 'val1!=val2'
+			document.write("<br>"+"val1!=val2"+"<br>")
+
+			// Melakukan proses perbandingan (!=) dan menampilkan hasil perbandingan
+			document.write(val1!=val2)
+
+			// Menampilkan teks 'val1>val2'
+			document.write("<br>"+"val1&gtval2"+"<br>")
+
+			// Melakukan proses perbandingan (>) dan menampilkan hasil perbandingan
+			document.write(val1>val2)
+
+			// Menampilkan teks 'val1<val2'
+			document.write("<br>"+"val1&ltval2"+"<br>")
+
+			// Melakukan proses perbandingan (<) dan menampilkan hasil perbandingan
+			document.write(val1<val2)
+		}
+	</script>
+
+	<body>
+		<!-- Menambahkan tombol yang dapat ditekan -->
+		<input type="button" name="button" value="relational" onclick=test()>
+	</body>
+</html>

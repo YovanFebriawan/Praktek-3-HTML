@@ -1,0 +1,29 @@
+<!-- Mendefinisikan tipe dokumen berupa html -->
+<html>
+	<!-- Memberikan judul pada tab browser -->
+	<head>
+		<title>Contoh Program JavaScript</title>
+	</head>
+
+	<!-- Menanamkan script sisi klien (JavaScript) -->
+	<script language ="javascript">
+		// Menampilkan dialog box dengan nilai default 0 dan disimpan ke dalam variabel nilai 
+		var nilai = prompt("Nilai (0-100): ",0);
+		// Menyimpan teks kosong ke dalam variabel hasil
+		var hasil = "";
+
+		// Membuat statement jika nilai >= 60 maka hasilnya lulus
+		if (nilai >= 60)
+			hasil = "Lulus";
+		// Jika nilai < 60 maka hasilnya tidak lulus
+		else
+			hasil = "Tidak Lulus";
+
+		// Menampilkan teks 'Hasil: (lulus/tidak lulus)' pada jendela browser
+		document.write("Hasil: "+hasil);
+	</script>
+
+	<body>
+
+	</body>
+</html>

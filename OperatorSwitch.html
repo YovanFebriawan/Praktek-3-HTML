@@ -1,0 +1,63 @@
+<!-- Mendefinisikan tipe dokumen berupa html -->
+<html>
+	<!-- Memberikan judul pada tab browser -->
+	<head>
+		<title>Contoh Program Javascript</title>
+	</head>
+
+	<!-- Menanamkan script sisi klien (JavaScript) -->
+	<script language="Javascript">
+		// Blok kode untuk melakukan tugas tertentu
+		function test(){
+			// Menampilkan kotak dialog untuk memasukkan nilai ke dalam variabel val1
+			val1=window.prompt("Input Nilai (1-5):")
+			// Memilih salah satu dari case sesuai dengan value dari val1
+			switch(val1){
+				// Blok kode case 1
+				case "1" :
+					// Menampilkan teks 'bilangan satu jika value dari val1 bernilai "1"'
+					document.write("bilangan satu")
+				// Menghentikan eksekusi dalam blok kode agar tidak berlanjut ke case berikutnya
+				break
+
+				// Blok kode case 2
+				case "2" :
+					// Menampilkan teks 'bilangan satu jika value dari val1 bernilai "2"'
+					document.write("bilangan dua")
+				// Menghentikan eksekusi dalam blok kode agar tidak berlanjut ke case berikutnya
+				break
+
+				// Blok kode case 3
+				case "3" :
+					// Menampilkan teks 'bilangan satu jika value dari val1 bernilai "3"'
+					document.write("bilangan tiga")
+				// Menghentikan eksekusi dalam blok kode agar tidak berlanjut ke case berikutnya
+				break
+
+				// Blok kode case 4
+				case "4" :
+					// Menampilkan teks 'bilangan satu jika value dari val1 bernilai "4"'
+					document.write("bilangan empat")
+				// Menghentikan eksekusi dalam blok kode agar tidak berlanjut ke case berikutnya
+				break
+
+				// Blok kode case 5
+				case "5" :
+					// Menampilkan teks 'bilangan satu jika value dari val1 bernilai "5"'
+					document.write("bilangan lima")
+				// Menghentikan eksekusi dalam blok kode agar tidak berlanjut ke case berikutnya
+				break
+
+				// Jika nilai dari val1 tidak ada di dalam case maka akan menampilkan default
+				default :
+					// Menampilkan teks 'bilangan lainnya'
+					document.write("bilangan lainnya");
+			}
+		}	
+	</script>
+
+	<body>
+		<!-- Menambahkan tombol yang dapat ditekan -->
+		<input type="button" name="button1" value="switch" onclick=test()>
+	</body>
+</html>

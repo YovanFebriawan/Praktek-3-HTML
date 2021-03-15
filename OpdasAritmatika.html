@@ -1,0 +1,43 @@
+<!-- Mendefinisikan tipe dokumen berupa html -->
+<html>
+<!-- Memberikan judul pada tab browser -->
+<head>
+	<title>Contoh Program JavaScript</title>
+</head>
+<!-- Menanamkan script sisi klien (JavaScript) -->
+<script lang="javascript">
+	// Blok kode untuk melakukan tugas tertentu
+	function test(val1,val2){
+		// Menampilkan teks 'Perkalian : val1*val2'
+		document.write("<br>"+"Perkalian : val1*val2"+"<br>")
+		// Melakukan operasi perkalian pada parameter dan menampilkan hasil perkalian
+		document.write(val1*val2)
+
+		// Menampilkan teks 'Pembagian : val1/val2' 
+		document.write("<br>"+"Pembagian : val1/val2"+"<br>")
+		// Melakukan operasi pembagian pada parameter dan menampilkan hasil pembagian
+		document.write(val1/val2)
+
+		// Menampilkan teks 'Penjumlahan : val1+val2' 
+		document.write("<br>"+"Penjumlahan : val1+val2"+"<br>")
+		// Melakukan operasi penjumlahan pada parameter dan menampilkan hasil penjumlahan
+		document.write(val1+val2)
+
+		// Menampilkan teks 'Pengurangan : val1+val2' 
+		document.write("<br>"+"Pengurangan : val1-val2"+"<br>")
+		// Melakukan operasi pengurangan pada parameter dan menampilkan hasil pengurangan
+		document.write(val1-val2)
+
+		// Menampilkan teks 'Modulus : val1%val2' 
+		document.write("<br>"+"Modulus : val1+val2"+"<br>")
+		// Melakukan operasi modulus pada parameter dan menampilkan hasil modulus
+		document.write(val1%val2)
+	}
+</script>
+
+<!-- Mendefinisikan bagian tubuh/body dokumen -->
+<body>
+	<!-- Menambahkan tombol yang dapat ditekan -->
+	<input type="button" name="button1" value="arithmetic" onclick=test(9,4)>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!-- Mendefinisikan tipe dokumen berupa html -->
+<!DOCTYPE html>
+<!-- Menentukan bahasa konten elemen, en untuk bahasa Inggris -->
+<html lang="en">
+	<head>
+		<!-- Mendefinisikan set karakter yang digunakan-->
+		<meta charset="utf-8">
+		<!-- Memberi judul pada tab browser -->
+		<title>Writing into an HTML Element with JavaScript</title>
+	</head>
+
+	<body>
+		<!-- Membuat paragraf dengan id = greet -->
+		<p id="greet"></p>
+		<!-- Membuat paragraf dengan id = result -->
+		<p id="result"></p>
+
+		<!-- Menanamkan script sisi klien -->
+		<script>
+			// Menambahkan teks 'Hello Gatot!' ke dalam paragraf dengan id = greet
+			document.getElementById("greet").innerHTML = "Hello Gatot!";
+
+			// Menyimpan nilai 50 ke dalam x dan nilai 30 ke dalam y
+			var x = 50;
+			var y = 30;
+
+			// Menyimpan hasil penjumlahan x dan y ke dalam sum
+			var sum = x + y;
+
+			// Menambahkan nilai sum ke dalam paragraf dengan id = result
+			document.getElementById("result").innerHTML = sum;
+		</script>
+	</body>
+</html>

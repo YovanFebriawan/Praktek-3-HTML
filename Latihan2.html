@@ -1,0 +1,97 @@
+<!-- Mendefinisikan tipe dokumen berupa html -->
+<html>
+	<!-- Memberikan judul pada tab browser -->
+	<head>
+		<title>Kalkulator Sederhana</title>
+	</head>
+
+	<!-- Menanamkan script sisi klien (JavaScript) -->
+	<script language ="Javascript">
+		// Blok kode untuk melakukan tugas penjumlahan
+		function penjumlahan(){
+			// Menyimpan nilai dari elemen dengan atribut nama bil1 ke variabel angka1
+			var angka1 = parseInt(document.kirim.bil1.value)
+			// Menyimpan nilai dari elemen dengan atribut nama bil2 ke variabel angka2
+			var angka2 = parseInt(document.kirim.bil2.value)
+			// Mengirim hasil penjumlahan angka1 dan angka 2 ke elemen dengan atribut nama ha
+			document.kirim.ha.value=angka1+angka2
+		}
+
+		// Blok kode untuk melakukan tugas pengurangan
+		function pengurangan(){
+			// Menyimpan nilai dari elemen dengan atribut nama bil1 ke variabel angka1
+			var bil1 = parseInt(document.kirim.bil1.value)
+			// Menyimpan nilai dari elemen dengan atribut nama bil2 ke variabel angka2
+			var bil2 = parseInt(document.kirim.bil2.value)
+			// Mengirim hasil pengurangan angka1 dan angka 2 ke elemen dengan atribut nama ha
+			document.kirim.ha.value=bil1-bil2
+		}
+
+		// Blok kode untuk melakukan tugas perkalian
+		function perkalian(){
+			// Menyimpan nilai dari elemen dengan atribut nama bil1 ke variabel angka1
+			var bil1 = parseInt(document.kirim.bil1.value)
+			// Menyimpan nilai dari elemen dengan atribut nama bil2 ke variabel angka2
+			var bil2 = parseInt(document.kirim.bil2.value)
+			// Mengirim hasil perkalian angka1 dan angka 2 ke elemen dengan atribut nama ha
+			document.kirim.ha.value=bil1*bil2
+		}
+
+		// Blok kode untuk melakukan tugas pembagian
+		function pembagian(){
+			// Menyimpan nilai dari elemen dengan atribut nama bil1 ke variabel angka1
+			var bil1 = parseInt(document.kirim.bil1.value)
+			// Menyimpan nilai dari elemen dengan atribut nama bil2 ke variabel angka2
+			var bil2 = parseInt(document.kirim.bil2.value)
+			// Mengirim hasil pembagian angka1 dan angka 2 ke elemen dengan atribut nama ha
+			document.kirim.ha.value=bil1/bil2
+		}		
+	</script>
+
+	<body>
+		<!-- Membuat form di html -->
+		<form method="POST" name="kirim">
+			<!-- Membuat tabel di html -->
+			<table>
+				<!-- Membuat caption sebuah tabel -->
+				<caption>Kalkulator</caption>
+				<!-- Mendefinisikan baris dalam tabel -->
+				<tr>
+					<!-- Mendefinisikan sel data dalam tabel -->
+					<td>Bilangan 1</td><td>:</td><td><input type="number" name="bil1" size="20"></td>
+				</tr>
+
+				<!-- Mendefinisikan baris dalam tabel -->
+				<tr>
+					<!-- Mendefinisikan sel data dalam tabel -->
+					<td>Bilangan 2</td><td>:</td><td><input type="number" name="bil2" size="20"></td>
+				</tr>
+
+				<!-- Mendefinisikan baris dalam tabel -->
+				<tr>
+					<!-- Mendefinisikan sel data dalam tabel -->
+					<td>Hasil</td><td>:</td><td><input type="text" name="ha" size="20"></td>
+				</tr>
+
+				<!-- Mendefinisikan baris dalam tabel -->
+				<tr>
+					<!-- Mendefinisikan sel data dalam tabel -->
+					<td></td>
+					<!-- Mendefinisikan sel data dalam tabel -->
+					<td></td>
+					<!-- Mendefinisikan sel data dalam tabel -->
+					<td align="center">
+						<!-- Membuat tombol -->
+						<input type="button" value="+" name="operator" onclick=penjumlahan()>
+						<!-- Membuat tombol -->
+						<input type="button" value="-" name="operator" onclick=pengurangan()>
+						<!-- Membuat tombol -->
+						<input type="button" value="*" name="operator" onclick=perkalian()>
+						<!-- Membuat tombol -->
+						<input type="button" value="/" name="operator" onclick=pembagian()>
+					</td>
+				</tr>
+			</table>
+		</form>
+	</body>
+</html>
